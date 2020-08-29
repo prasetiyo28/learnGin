@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/prasetiyo28/learngin/controllers"
-	"github.com/prasetiyo28/learngin/models"
+	"github.com/prasetiyo28/learnGin/controllers"
+	"github.com/prasetiyo28/learnGin/models"
 )
 
 func main() {
