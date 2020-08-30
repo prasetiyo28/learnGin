@@ -12,6 +12,11 @@ func main() {
 	// r.GET("/", func(c *gin.Context) {
 	// 	c.JSON(http.StatusOK, gin.H{"data": "hello world"})
 	// })
-	r.GET("/books", controllers.FindBooks) // new
+	r.GET("/books", controllers.FindBooks)   // new
+	r.POST("/books", controllers.CreateBook) // new
+	r.GET("/books/:id", controllers.FindBook)
+	r.PATCH("/books/:id", controllers.UpdateBook)  // new
+	r.DELETE("/books/:id", controllers.DeleteBook) // new
+
 	r.Run()
 }

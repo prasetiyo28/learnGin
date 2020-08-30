@@ -7,8 +7,8 @@ import (
 
 var DB *gorm.DB
 
-func ConnectDataBase() {
-	database, err := gorm.Open("mysql", "root:welcome1@tcp(127.0.0.1:3306)/learngin")
+func ConnectDatabase() {
+	database, err := gorm.Open("mysql", "root:@tcp(127.0.0.1:3306)/learngin?")
 
 	if err != nil {
 		panic("Failed to connect to database!")
